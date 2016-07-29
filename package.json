@@ -27,5 +27,8 @@
     "mocha": "^2.5.3",
     "proxyquire": "^1.7.10",
     "sinon": "^1.17.5"
+  },
+  "dependencies": {
+    "boast-console": "0.0.3"
   }
 }
