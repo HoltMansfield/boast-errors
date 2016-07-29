@@ -1,0 +1,31 @@
+{
+  "name": "boast-errors",
+  "version": "0.0.0",
+  "description": "Error handling for node applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha 'tests/**/*tests.js' --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HoltMansfield/boast-errors.git"
+  },
+  "keywords": [
+    "Cosole",
+    "messages",
+    "errors",
+    "warnings"
+  ],
+  "author": "boast <holtmansfield@gmail.com> (http://boast.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HoltMansfield/boast-errors/issues"
+  },
+  "homepage": "https://github.com/HoltMansfield/boast-errors#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "proxyquire": "^1.7.10",
+    "sinon": "^1.17.5"
+  }
+}
