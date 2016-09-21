@@ -1,11 +1,24 @@
 var boastConsole = require('boast-console');
 var Promise = require('bluebird');
 
-var logToConsole = function(message) {
-  if(message !== null && typeof message === 'object') {
-    boastConsole.log(JSON.stringify(message));
+var logStringOrObject = function(message) {
+  if(typeof message === 'object') {
+    boastConsole.error(JSON.stringify(message));
   } else {
-    boastConsole.log(message);
+    boastConsole.error(message);
+  }
+}
+
+var logToConsole = function(message) {
+  if(message !== null) {
+    if(message.message) {
+      logStringOrObject(message.message);
+    } else {
+      logStringOrObject(message);
+    }
+
+  } else {
+    boastConsole.error('\'message\' is null in boast-errors.logToConsole()');
   }
 };
 
